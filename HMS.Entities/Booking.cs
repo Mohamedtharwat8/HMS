@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace HMS.Entities
 {
-    internal class Booking
+    public class Booking
     {
-
-        public int ID { get; set; }
-
-        public int AccomodationID { get; set; }
-
-        public Accomodation accomodation { get; set; }
-
+        public int Id { get; set; }
+        public int AccomodationId { get; set; }
+        public Accomodation Accomodation { get; set; }
         public DateTime FromDate { get; set; }
 
+
+        /// <summary>
+        /// No of Stay Nights
+        /// </summary>
         public int Duration { get; set; }
-
-
     }
 }
